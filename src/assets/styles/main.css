@@ -1,0 +1,215 @@
+/* Variables de color */
+:root {
+  --resimple-primary: #00A19A;
+  --resimple-secondary: #FF7F41;
+  --resimple-dark: #2C3E50;
+  --resimple-light: #F8F9FA;
+  --resimple-accent: #E6F7F6;
+  --resimple-success: #4CAF50;
+  --resimple-danger: #E74C3C;
+  --resimple-warning: #F39C12;
+}
+
+/* Estilos base */
+body {
+  background-color: var(--resimple-light);
+  color: var(--resimple-dark);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Botones personalizados */
+.btn-primary,
+.btn-resimple-primary {
+  background-color: var(--resimple-primary);
+  border-color: var(--resimple-primary);
+  color: white;
+}
+
+.btn-primary:hover,
+.btn-resimple-primary:hover {
+  background-color: #00857E;
+  border-color: #00857E;
+  color: white;
+}
+
+.btn-outline-primary {
+  color: var(--resimple-primary);
+  border-color: var(--resimple-primary);
+}
+
+/* Header */
+.header {
+  background-color: white;
+  border-bottom: 3px solid var(--resimple-accent);
+}
+
+.header h1 {
+  color: var(--resimple-primary);
+  font-weight: 700;
+}
+
+/* Utilidades */
+.bi {
+  vertical-align: middle;
+}
+
+/* Paginación */
+.pagination .page-link {
+  color: var(--resimple-dark);
+  border: 1px solid #dee2e6;
+}
+
+.pagination .page-link:hover {
+  color: var(--resimple-primary);
+  background-color: var(--resimple-accent);
+  border-color: #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--resimple-primary);
+  border-color: var(--resimple-primary);
+  color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #6c757d;
+}
+
+.pagination .page-link span[aria-hidden="true"] {
+  color: inherit;
+}
+
+/* Filtros */
+.filters {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+.filters__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.filters__group {
+  margin-bottom: 1rem;
+}
+
+.filters__label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.filters__input {
+  border-radius: 4px;
+}
+
+.filters__salary-range {
+  gap: 0.5rem;
+}
+
+.filters__button {
+  margin-top: 0.5rem;
+}
+
+/* Limita la altura del menú desplegable de áreas y agrega scroll */
+.filters select[name="area"] {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* DataTable */
+.data-table {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+}
+
+.data-table__header {
+  margin-bottom: 1.5rem;
+}
+
+.data-table__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.data-table__export-btn {
+  min-width: 160px;
+}
+
+.data-table__container {
+  margin-bottom: 1rem;
+}
+
+.data-table__th {
+  background-color: var(--resimple-accent);
+  color: var(--resimple-dark);
+  border-bottom: 2px solid var(--resimple-primary);
+}
+
+.data-table__row:hover {
+  background-color: rgba(0, 161, 154, 0.05);
+}
+
+.data-table__cell {
+  vertical-align: middle;
+}
+
+.data-table__pagination {
+  margin-top: 1rem;
+}
+
+.data-table__info {
+  font-size: 0.95rem;
+}
+
+/* KPIs */
+.kpis {
+  margin-bottom: 2rem;
+}
+
+.kpis__card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+  transition: transform 0.2s;
+}
+
+.kpis__card:hover {
+  transform: translateY(-5px);
+}
+
+.kpis__body {
+  background: var(--resimple-accent);
+  border-radius: 1rem;
+}
+
+.kpis__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kpis__title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.kpis__value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.kpis__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--resimple-primary);
+  border-radius: 50%;
+  padding: 1rem;
+}
