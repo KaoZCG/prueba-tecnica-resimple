@@ -23,20 +23,18 @@ Esta aplicación permite cargar, filtrar y visualizar información de trabajador
 
 2. Instala las dependencias principales:
    ```sh
-   npm install react@latest react-dom@latest vite@latest
-   npm install axios xlsx @mui/material @emotion/react @emotion/styled @mui/x-data-grid react-bootstrap bootstrap bootstrap-icons
-   npm install react-select
+      npm install react react-dom vite axios xlsx @mui/material @emotion/react @emotion/styled @mui/x-data-grid react-bootstrap bootstrap bootstrap-icons react-select
    ```
 
 3. Instala las dependencias de desarrollo:
    ```sh
-   npm install --save-dev @types/react @types/react-dom @vitejs/plugin-react eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh
+     npm install --save-dev @vitejs/plugin-react eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh
    ```
 
 ## Uso en desarrollo
 
 ```sh
-npm run dev
+  npm run dev
 ```
 
 La aplicación estará disponible en [http://localhost:5173] por defecto.
@@ -44,15 +42,15 @@ La aplicación estará disponible en [http://localhost:5173] por defecto.
 ## Build para producción
 
 ```sh
-npm run build
-npm run preview
+  npm run build
+  npm run preview
 ```
 
 ## Uso con Docker
 
 ```sh
-docker build -t resimple-app .
-docker run -p 80:80 resimple-app
+  docker build -t resimple-app .
+  docker run -p 80:80 resimple-app
 ```
 
 La app estará disponible en [http://localhost] (escribir esto en la barra de busqueda del navegador).
